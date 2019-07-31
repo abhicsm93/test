@@ -1,0 +1,68 @@
+XMC 4700/4800 Relax Kit
+
+RAM: 352 KB
+Flash Memory: 2MB
+Cortex M4 processor
+3 push buttons( 2 user defined and 1 reset button)
+2 LEDs
+Processer: XMC 4700/4800
+Debugger: XMC 4200
+
+Two 40 pin headers(X1 & X2)
+	This are assembled only in the EtherCAT versions.
+
+X101: Debugger micro-usb port
+
+UART
+
+0	Rx
+1	Tx
+
+SPI
+
+5	CLK
+4	MISO
+3	MOSI
+2	CS
+
+I2C
+
+17	SCL
+16	SDA
+
+CAN 
+
+X2.33	CANH
+X2.35	CANL
+
+Has on chip level shifter(3.3v and 5v)
+Paraller operations of I2C and ADC4 and ADC5 is not possible because they share same arduino pins.
+SD card slot can be assembled to the board at the port x401 using SPI interface.
+
+
+After power-up the green DEBUG LED starts blinking. In case there is a connection to a PC via the Debug USB
+plug X101 and the USB Debug Device drivers are installed on this PC, the DEBUG LED will turn from blinking to
+constant illumination.
+
+The green Power LED (VDD3.3) indicates the presence of the generated 3.3 V supply voltage.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+XMC2GO
+
+RAM: 16KB
+Flash Memory: 64KB
+
+Processor: XMC 1100
+Debugger: XMC 4200
+
+Cortex M0 processor
+
+Two 8 pin headers(X1 and X2)
+2 user LEDs
+Works on 3.3V
+The Power&Debug LED indicates the presence of the generated 3.3V supply voltage.
+
+An on-board reverse current protection diode will ensure safe operation and protects the USB port of the Laptop/PC in case power is provided through the pin header X1. 
+
+
